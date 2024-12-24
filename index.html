@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Enhancer</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <canvas id="particleCanvas"></canvas>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h1>Photo Enhancer</h1>
+            <p>Tingkatkan resolusi dan kualitas foto Anda dengan mudah.</p>
+            <div class="upload-area">
+                <div class="drop-zone" id="dropZone">
+                    <i class="fas fa-upload"></i>
+                    <p>Tarik foto ke sini atau klik untuk mengunggah</p>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+            </div>
+            <canvas id="photoCanvas"></canvas>
+            <button class="process-btn" id="processBtn">Enhance Foto</button>
+            <a id="downloadBtn" class="download-btn" download="enhanced-photo.png">Download Foto</a>
+        </div>
+    </div>
+</body>
+</html>
